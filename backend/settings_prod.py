@@ -24,7 +24,7 @@ MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 # CORS - update with your frontend URL later
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'soothing-kindness-production-9b4e.up.railway.app',
+    'https://soothing-kindness-production-9b4e.up.railway.app',
 ]
 
 # Security
