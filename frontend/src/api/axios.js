@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://web-production-91cf9.up.railway.app/api/',
+  baseURL: 'https://www.golfbros.org/api/',
 });
 
 // Add token to every request if logged in

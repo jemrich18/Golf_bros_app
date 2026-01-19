@@ -4,7 +4,7 @@ import os
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['.railway.app', '.up.railway.app']
+ALLOWED_HOSTS = ['.railway.app', '.up.railway.app', 'www.golfbros.org', 'golfbros.org']
 
 # Database - Railway provides DATABASE_URL
 DATABASE_URL = os.environ.get('DATABASE_URL')
@@ -25,6 +25,8 @@ MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'https://soothing-kindness-production-9b4e.up.railway.app',
+    'https://www.golfbros.org',
+    'https://golfbros.org',
 ]
 
 # Security
