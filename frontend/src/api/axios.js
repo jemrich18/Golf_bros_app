@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api/',
+  baseURL: 'https://web-production-91cf9.up.railway.app/api/',
 });
 
 // Add token to every request if logged in
