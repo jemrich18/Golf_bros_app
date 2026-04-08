@@ -27,7 +27,11 @@ function CreatePost() {
     setError('');
 
     try {
-      await API.post('posts/', formData);
+      const payload = {
+        ...formData,
+        score: formData.score === '' ? null : formData.score,
+      };
+      await API.post('posts/', payload);
       navigate('/');
     } catch (err) {
       setError('Failed to create post. Are you logged in?');
